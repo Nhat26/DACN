@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './DangNhap.module.css'
-import images from '../../images/logo.jpg'
+import images from '../../images/Final_logo.png'
 // import images from '../../images/background.jpg'
 function DangNhap() {
   return (
