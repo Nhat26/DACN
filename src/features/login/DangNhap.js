@@ -2,7 +2,10 @@ import React from "react";
 import styles from './DangNhap.module.css'
 import images from '../../images/Final_logo.png'
 // import images from '../../images/background.jpg'
+import { useNavigate } from "react-router-dom";
 function DangNhap() {
+  const navigate = useNavigate();
+
   return (
     <div className={styles.container} >
       {/* <img src={images} alt='images'/> */}
@@ -18,14 +21,13 @@ function DangNhap() {
             <label htmlFor="password">Mật khẩu</label>
             <input type="password" name="password" id="password" />
           </div>
-          <input type="submit" value="Đăng Nhập " />
+          <input onClick={() => {navigate(`/header`);}} type="submit" value="Đăng Nhập " />
         </div>
 
         <div className={styles.images}>
           <img src={images} alt='images' style={{width: "150px", height : "150px" }}/>
-          <p>KHANH NHAT COMPANY</p>
+          <h2>KHANH NHAT COMPANY</h2>
         </div>
-
       </form>
 
 
