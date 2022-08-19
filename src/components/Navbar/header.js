@@ -1,33 +1,34 @@
-import React from 'react'
-import styles from './navbar.module.css'
-import images from '../../images/Final_logo.png'
-const Navbar = () => {
-  return (
-    <>
-        <nav className={styles.mainNav}> 
-          <div className={styles.logo}>
-          <img src={images} alt='images' style={{width: "70px", height : "70px" }}/>
-          </div>
+import React from "react";
+import styles from "./navbar.module.css";
+import images from "../../images/Final_logo.png";
+import {useNavigate} from 'react-router-dom';
 
-          <div className={styles.menuLink}>
-            <ul>
-              <li>
-                <a href="#">Trang chủ</a>
-              </li>
-              <li>
-                <a href="#">Chi nhánh</a>
-              </li>
-              <li>
-                <a href="#">Kho</a>
-              </li>
-              <li>
-                <a href="#">Thống kê</a>
-              </li>
-            </ul>
-          </div>
+const header = () => {
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const navigate = useNavigate();
+
+  return (
+    <div style={{position: 'relative'}} >
+      <header>
+        <img
+          className={styles.imageLogo}
+          src={images}
+          alt="images"
+        />
+        <nav 
+        // ref={navRef}
+        >
+          <p onClick={() => {navigate(`/ChiNhanh`)}}>Chi Nhánh</p>
+          <p onClick={() => {navigate(`/Kho`)}}> Kho </p>
+          <p onClick={() => {navigate(`/ThongKe`)}}> Thống kê</p>
+         
         </nav>
-    </>
-  )
+      </header>
+
+      
+    </div>
+  );
 }
 
-export default Navbar;
+export default header;

@@ -40,6 +40,11 @@
     justify-content: center;
     align-items: center;
 }
+.images > img{
+  left:0;
+  position: relative;
+} 
+
   /* form:after{
     content:'';
     display: block;
