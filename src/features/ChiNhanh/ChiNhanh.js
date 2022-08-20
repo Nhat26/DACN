@@ -1,11 +1,13 @@
 import React from 'react';
+import Clock from '../../components/Clock/clock'
 function ChiNhanh() {
 
   return (
     
-    <div>
-      <h2>ChiNhanh</h2>
+    <div style={{position: "relative"}} >
+      <Clock></Clock>
     </div>
+
   );
 }
 

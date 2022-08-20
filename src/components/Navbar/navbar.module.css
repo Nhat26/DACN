@@ -79,7 +79,7 @@ nav p:hover{
   
 
   header nav {
-      position: fixed;
+      /* position: fixed; */
       height: inherit;
       display: flex;
       align-items: center;

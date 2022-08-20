@@ -22,7 +22,7 @@ const header = () => {
           <p onClick={() => {navigate(`/ChiNhanh`)}}>Chi Nhánh</p>
           <p onClick={() => {navigate(`/Kho`)}}> Kho </p>
           <p onClick={() => {navigate(`/ThongKe`)}}> Thống kê</p>
-         
+          <p onClick={() => {navigate(`/NhanVien`)}}> Nhân Viên</p>
         </nav>
       </header>
 

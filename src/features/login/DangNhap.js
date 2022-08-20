@@ -21,7 +21,7 @@ function DangNhap() {
             <label htmlFor="password">Mật khẩu</label>
             <input type="password" name="password" id="password" />
           </div>
-          <input onClick={() => {navigate(`/header`);}} type="submit" value="Đăng Nhập " />
+          <input onClick={() => {navigate(`/ChiNhanh`);}} type="submit" value="Đăng Nhập " />
         </div>
 
         <div className={styles.images}>
