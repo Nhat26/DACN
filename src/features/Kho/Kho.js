@@ -3,7 +3,7 @@ function Kho() {
 
   return (
     
-    <div>
+    <div style = {{width:"70%"}}>
       <h2>Kho</h2>
     </div>
   );

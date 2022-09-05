@@ -5,12 +5,17 @@ import DangNhap from './features/login/DangNhap';
 import ChiNhanh from './features/ChiNhanh/ChiNhanh'
 import Kho from './features/Kho/Kho'
 import ThongKe from './features/ThongKe/ThongKe'
-import NhanVien from './features/NhanVien/NhanVien';
+import TaiKhoan from './features/TaiKhoan/TaiKhoan';
 import Home from './layout/home/homeindex';
+// import Chatclock from './components/chatandclock/chatclock';
+import TungChiNhanh from './features/ChiNhanh/TungChiNhanh'
 function App() {
   return (
-   <Router>
-      <Routes>
+    
+    <Router>
+      
+       <Routes>
+        
           <Route path='/DangNhap' element={
             <DangNhap></DangNhap>
           }>
@@ -21,12 +26,6 @@ function App() {
           </Home>
           }>
           </Route>
-          {/* <Route path='/ChiNhanh' element={
-            <Home>
-              <ChiNhanh></ChiNhanh>
-            </Home>
-          }>
-          </Route> */}
           <Route path='/Kho' element={
             <Home>
               <Kho></Kho>
@@ -41,12 +40,19 @@ function App() {
           </Route>
           <Route path='/NhanVien' element={
             <Home>
-              <NhanVien></NhanVien>
+              <TaiKhoan></TaiKhoan>
             </Home>
           }>
+        
           </Route>
-      </Routes>
-   </Router>
+          <Route path='/TungChiNhanh' element={
+            <TungChiNhanh/>
+          }>
+          </Route>
+             
+      </Routes> 
+      </Router>
+
   );
 }
 

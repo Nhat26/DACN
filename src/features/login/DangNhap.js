@@ -25,7 +25,7 @@ function DangNhap() {
         </div>
 
         <div className={styles.images}>
-          <img src={images} alt='images' style={{width: "150px", height : "150px" }}/>
+          <img src={images} alt='images' style={{width:"150px",height:"150px" }}/>
           <h2>KHANH NHAT COMPANY</h2>
         </div>
       </form>

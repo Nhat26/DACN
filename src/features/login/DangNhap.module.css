@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: montserrat, sans-serif;
+   
   }
   input,button{
     appearance: none;
@@ -31,7 +32,6 @@
     align-items: center;
     background-color: #fff;
     border-radius: 3%;
-  
   }
 .images{
     /* width: 200px; */

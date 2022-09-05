@@ -6,20 +6,22 @@
   padding: 0;
   box-sizing: border-box;
   font-family: montserrat, sans-serif;
+  
 }
 .right{
   /* position: ; */
-  height: 100vh;
-  width: 100%;
+  height: fit-content;
+  width: fit-content;
 }
 .clock {
+  background-color: aliceblue;
   width: 150px;
   height: 150px;
   border-radius: 50%;
   position: absolute;
-  top: 20px;
+  top: 25px;
   /* left: 50%; */
-  right: 20px;
+  right: 70px;
   /* transform: translate(-50%, -50%); */
   box-shadow: 0 2px 30px rgba(0, 0, 0, 8%);
   font-size: 13px;
