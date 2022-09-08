@@ -37,4 +37,18 @@
     bottom: 10px;
     color: black;
 }
-
+.AddChiNhanh{
+  background-color: var(--leftColor); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  top: 20px;
+  right: calc(20% - 100%);
+  border-radius: 3%;
+  margin-bottom: 20px;
+}
